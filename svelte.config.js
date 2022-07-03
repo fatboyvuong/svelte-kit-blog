@@ -9,12 +9,20 @@ const config = {
 	preprocess: preprocess(),
 
 	kit: {
-		adapter: vercel({
-			edge: false,
-			external: [],
-			split: false
-		})
+		adapter: adapter(),
+	},
+	vite: {
+		define: {
+			'import.meta.env.VERCEL_ANALYTICS_ID': JSON.stringify(process.env.VERCEL_ANALYTICS_ID)
+		}
 	}
+	// kit: {
+	// 	adapter: vercel({
+	// 		edge: false,
+	// 		external: [],
+	// 		split: false
+	// 	})
+	// }
 };
 
 export default config;
