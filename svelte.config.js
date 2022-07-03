@@ -12,7 +12,7 @@ const config = {
 		adapter: vercel({
 			edge: false,
 			external: [],
-			split: false,
+			split: false
 		})
 	}
 };
