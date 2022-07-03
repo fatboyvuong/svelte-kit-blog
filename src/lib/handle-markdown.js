@@ -35,7 +35,7 @@ export function convertMarkdown(path) {
 export function convertToPostPreview(object) {
 	// const url = object?.path;
 	// create route for post
-	// const url = object.path.replace('.md', '').replace('src/', '');
-	const url = object.path.replace('.md', '').replace('static/', '');
+	const url = object.path.replace('.md', '').replace('src/', '');
+	// const url = object.path.replace('.md', '').replace('static/', '');
 	return { ...object?.attributes, url };
 }
