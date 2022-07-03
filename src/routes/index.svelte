@@ -54,8 +54,4 @@
 	:global(a) {
 		color: black;
 	}
-
-	main {
-		padding: 16px;
-	}
 </style>

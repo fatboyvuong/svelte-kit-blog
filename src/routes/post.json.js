@@ -2,7 +2,7 @@
 
 import { importMarkdowns, convertToPostPreview } from '$lib/handle-markdown';
 
-let postFiles = importMarkdowns('src/posts/');
+let postFiles = importMarkdowns('static/posts/');
 
 // Dynamically add blog post to index file (homepage)
 export async function get() {

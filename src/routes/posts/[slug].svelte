@@ -28,9 +28,3 @@
 	</p>
 	{@html post.html}
 </article>
-
-<style>
-	:global() {
-		padding: 16px;
-	}
-</style>
